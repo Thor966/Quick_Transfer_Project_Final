@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online File Transfer</title>
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1037/1037316.png">
+<style>
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e7cfc, #00bcd4);
+    color: #fff;
+    margin: 0;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Heading */
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 14px 28px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: bold;
+    color: white;
+}
+
+.send-btn { background: #007BFF; }
+.send-btn:hover { background: #0056b3; }
+
+.receive-btn { background: #28a745; }
+.receive-btn:hover { background: #1e7e34; }
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #f1f1f1;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Online File Transfer</h1>
+    <p>Select an option below:</p>
+    <div class="button-container">
+        <a href="send.html" target="_blank"><button class="send-btn" >Send File</button></a>
+        <a href="receive.html" target="_blank"><button class="receive-btn" >Receive File</button></a>
+    </div>
+
+    <footer>
+        <p>&copy; Created By Aniket Gawande...</p>
+    </footer>
+</div>
+
+</body>
+</html>
